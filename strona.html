@@ -26,14 +26,23 @@
 var jqxhr = $.ajax( "http://localhost/?/helios" )
   .done(function(w) {
  //   alert( "success" );
-$( "div").html(w[0].ulica)
+
+
   })
+
+$( "div").html(w[0].ulica);
+
+$.each( [w], function( value ) {
+  alert(  value ); })
+
   .fail(function() {
     alert( "error" );
   })
   .always(function() {
     alert( "complete" );
   });
+
+
  
 // Perform other work here ...
  
