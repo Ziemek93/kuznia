@@ -1,0 +1,62 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "My First API"
+  },
+  "paths" : {
+    "/helios" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "404" : {
+            "description" : "Nie ma takiego elementu"
+          }
+        }
+      },
+      "post" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Nie dziala :("
+          }
+        }
+      },
+      "delete" : {
+        "parameters" : [ ],
+        "responses" : {
+          "204" : {
+            "description" : "Nie dziala :("
+          }
+        }
+      }
+    },
+    "/helios/ulica" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Pobrano elementy"
+          }
+        }
+      },
+      "put" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Zmieniono"
+          }
+        }
+      },
+      "delete" : {
+        "parameters" : [ ],
+        "responses" : {
+          "204" : {
+            "description" : "Usuniecie kina z ulicy"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

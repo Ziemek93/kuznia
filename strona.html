@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Strona RESTowa</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<!--<div id="app">
+    <select>
+        <option v-for="jeden in dane" v-bind:value="jeden._id.$oid">{{jeden.marka}}</option>
+      </select>
+
+      <div id="example-2">
+          <button v-on:click="greet">Usuń</button>
+        </div></div> -->
+
+
+<div></div>
+
+<script>
+var jqxhr = $.ajax( "http://localhost/?/helios" )
+  .done(function(w) {
+ //   alert( "success" );
+$( "div").html(w[0].ulica)
+  })
+  .fail(function() {
+    alert( "error" );
+  })
+  .always(function() {
+    alert( "complete" );
+  });
+ 
+// Perform other work here ...
+ 
+// Set another completion function for the request above
+jqxhr.always(function() {
+  alert( "second complete" );
+});
+
+ 
+
+              </script>  
+</body>
+
+</html> 

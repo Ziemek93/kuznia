@@ -1,0 +1,2 @@
+mongoimport --jsonArray --db kina --collection helios --file /var/www/html/baza.js
+
